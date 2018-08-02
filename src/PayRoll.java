@@ -18,7 +18,7 @@ public class PayRoll {
 			salaryCal =(employee.salary * employee.hours *2);
 		}
 		else {
-			salaryCal = 0.0;
+			salaryCal = 0.00;
 		}
 		return salaryCal;
 	
