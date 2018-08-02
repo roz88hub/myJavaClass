@@ -6,7 +6,7 @@ public class PayRoll {
 		 * salary and payRate
 		 * 
 		 * 2. If the empployee has a yearly salary
-		 * 
+		 *  this is a test change in the eclipse
 		 */
 		double salaryCal;
 		//if the empployee has a yearly salary
