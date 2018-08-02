@@ -14,7 +14,7 @@ public class PayRoll {
 			
 		}
 		else if(employee.payRate == "HOURLY"){
-			salaryCal =(employee.salary * employee.hours *2);
+			salaryCal =(employee.salary * employee.hours *3);
 		}
 		else {
 			salaryCal = 0.00;
