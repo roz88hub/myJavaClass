@@ -1,4 +1,3 @@
-
 public class PayRoll {
 	
 	public static double calculatePay(Employee employee){
