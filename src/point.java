@@ -50,8 +50,8 @@ public double Distance(point another) {
 }
 
 public void Shift() {
-	this.x = this.x++;
-	this.x = this.y++;
+	this.x = this.x + 1;
+	this.y = this.y + 1;
 	System.out.print("x:"+(this.x)+ "," + "y:" +(this.y));
 	
 	
