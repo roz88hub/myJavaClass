@@ -9,12 +9,12 @@ public class PayRoll {
 		 */
 		double salaryCal;
 		//if the empployee has a yearly salary
-		if (employee.payRate == "YEARLY"){
-			salaryCal = (employee.salary/52) * 2;
+		if (employee.getPayRate() == "YEARLY"){
+			salaryCal = (employee.getSalary()/52) * 2;
 			
 		}
-		else if(employee.payRate == "HOURLY"){
-			salaryCal =(employee.salary * employee.hours *3);
+		else if(employee.getPayRate() == "HOURLY"){
+			salaryCal =(employee.getSalary() * employee.getHours() *3);
 		}
 		else {
 			salaryCal = 0.00;
@@ -29,10 +29,12 @@ public class PayRoll {
 		//Employee(String name , double salary,String PayRate, String joinDate, String typeOfEmployee )
 		Employee ron = new Employee("Ron Johnson", 33200.00 , "YEARLY" , " 10-10-2010", "FUll Time");
 		
-		calculatePay(tom);
+		//calculatePay(tom);
 		
-		System.out.println(calculatePay(tom));
-		System.out.println(calculatePay(ron));
+		ron.compareSalary(tom);
+		
+		/*System.out.println(calculatePay(tom));
+		System.out.println(calculatePay(ron));*/
 	}
 
 }

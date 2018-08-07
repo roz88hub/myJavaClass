@@ -23,12 +23,92 @@ public class Employee {
 	
 // Creating the attributes for Employee
 	private	String name;
-	public	int employeeID;
-	public	double salary;
-	public	String payRate;
+	private	int employeeID;
+	private	double salary;
+	private	String payRate;
 	private	String joinDate;
 	private	String typeOfEmployee;
-	public	int hours;
+	private	int hours;
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public int getEmployeeID() {
+		return employeeID;
+	}
+
+
+	public void setEmployeeID(int employeeID) {
+		this.employeeID = employeeID;
+	}
+
+
+	public double getSalary() {
+		return salary;
+	}
+
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+
+	public String getPayRate() {
+		return payRate;
+	}
+
+
+	public void setPayRate(String payRate) {
+		this.payRate = payRate;
+	}
+
+
+	public String getJoinDate() {
+		return joinDate;
+	}
+
+
+	public void setJoinDate(String joinDate) {
+		this.joinDate = joinDate;
+	}
+
+
+	public String getTypeOfEmployee() {
+		return typeOfEmployee;
+	}
+
+
+	public void setTypeOfEmployee(String typeOfEmployee) {
+		this.typeOfEmployee = typeOfEmployee;
+	}
+
+
+	public int getHours() {
+		return hours;
+	}
+
+
+	public void setHours(int hours) {
+		this.hours = hours;
+	}
+
+
+	public String getSsn() {
+		return ssn;
+	}
+
+
+	public void setSsn(String ssn) {
+		this.ssn = ssn;
+	}
+
+	private String ssn;
 	
 	
 	Employee(String name , int employeeID, double salary,String PayRate, String joinDate, String typeOfEmployee,int hours ){
@@ -49,6 +129,16 @@ public class Employee {
 		this.joinDate = joinDate;
 		this.typeOfEmployee = typeOfEmployee;
 		
+	}
+	
+	// Creating toString() Method
+	// Methods: compared the salary of current object with that of the object send to it
+	
+	void compareSalary(Employee another){
+		
+		if(this.salary > another.salary){
+			System.out.println(this.name + " has high salary than " + another.name);
+		}
 	}
 	
 	public String toString(){
